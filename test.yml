@@ -1,0 +1,25 @@
+---
+
+- name: vargant
+  hosts: vjhvf
+  gather_facts: false
+  
+  tasks:
+
+   - name: cd_vagrant
+     cmd: cd C:\HashiCorp\Vagrant\bin\
+
+   - name: add image
+     cmd: vagrant.exe box add ubuntu/trusty64
+	 
+- name: vargant up
+  hosts: vjhvf
+  gather_facts: false
+  
+  tasks:
+  
+   - name: vagrant up
+     cmd:  vagrant.exe up ubuntu/trusty64
+  
+  
+	 
