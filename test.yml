@@ -20,6 +20,3 @@
   
    - name: vagrant up
      cmd:  vagrant.exe up ubuntu/trusty64
-  
-  
-	 
