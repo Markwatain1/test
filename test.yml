@@ -11,7 +11,7 @@
 
    - name: add image
      cmd: vagrant.exe box add ubuntu/trusty64
-	 
+     
 - name: vargant up
   hosts: vjhvf
   gather_facts: false
