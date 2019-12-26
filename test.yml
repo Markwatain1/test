@@ -9,12 +9,12 @@
     - name: add image
       win_psexec: 
         command: vagrant.exe box add ubuntu/trusty64
-        executable: C:\HashiCorp\Vagrant\bin\
+        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
     - name: vagrant init
       win_psexec:
         command: vagrant.exe box add ubuntu/trusty64
-        executable: C:\HashiCorp\Vagrant\bin\
+        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
 - name: vargant up
   hosts: vjhvf
@@ -25,4 +25,4 @@
    - name: vagrant up
      win_psexec:  
        command: vagrant.exe up ubuntu/trusty64
-       executable: C:\HashiCorp\Vagrant\bin\
+       executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
