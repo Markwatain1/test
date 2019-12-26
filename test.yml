@@ -7,10 +7,10 @@
   tasks:
 
    - name: cd_vagrant
-     cmd: cd C:\HashiCorp\Vagrant\bin\
+     win_command: cd C:\HashiCorp\Vagrant\bin\
 
    - name: add image
-     cmd: vagrant.exe box add ubuntu/trusty64
+     win_command: vagrant.exe box add ubuntu/trusty64
 
 - name: vargant up
   hosts: vjhvf
