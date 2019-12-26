@@ -1,28 +1,26 @@
----
-
-- name: vargant
-  hosts: vjhvf
+--- 
+- 
   gather_facts: false
-  
-  tasks:
-
-    - name: add image
+  hosts: vjhvf
+  name: vargant
+  tasks: 
+    - 
+      name: "add image1"
       win_psexec: 
-        command: vagrant box add ubuntu/trusty64
-        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
-
-    - name: vagrant init
-      win_psexec:
-        command: vagrant.exe box init ubuntu/trusty64
-        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
-
-- name: vargant up
-  hosts: vjhvf
+        command: "vagrant box add ubuntu/trusty64"
+        executable: "C:\\HashiCorp\\Vagrant\\bin\\vagrant.exe"
+    - 
+      name: "vagrant init"
+      win_psexec: 
+        command: "vagrant.exe box init ubuntu/trusty64"
+        executable: "C:\\HashiCorp\\Vagrant\\bin\\vagrant.exe"
+- 
   gather_facts: false
-  
-  tasks:
-
-   - name: vagrant up
-     win_psexec:  
-       command: vagrant.exe up ubuntu/trusty64
-       executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
+  hosts: vjhvf
+  name: "vargant up"
+  tasks: 
+    - 
+      name: "vagrant up"
+      win_psexec: 
+        command: "vagrant.exe up ubuntu/trusty64"
+        executable: "C:\\HashiCorp\\Vagrant\\bin\\vagrant.exe"
