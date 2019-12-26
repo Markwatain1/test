@@ -8,7 +8,7 @@
 
     - name: add image
       win_psexec: 
-        command: vagrant.exe box add ubuntu/trusty64
+        command: vagrant.exe box add ubuntu/trusty641
         executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
     - name: vagrant init
