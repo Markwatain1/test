@@ -13,7 +13,7 @@
 
     - name: vagrant init
       win_psexec:
-        command: box init ubuntu/trusty64
+        command: init ubuntu/trusty64
         executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
 - name: vargant up
