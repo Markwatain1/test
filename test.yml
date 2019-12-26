@@ -6,14 +6,14 @@
   
   tasks:
 
-    - name: add image1
-      win_psexec: 
-        command: box add ubuntu/trusty64 
-        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
+    #- name: add image1
+     # win_psexec: 
+      #  command: box add ubuntu/trusty64 
+       # executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
         
     - name: vagrant init
       win_psexec:
-        command: vagrant.exe box init ubuntu/trusty64
+        command: box init ubuntu/trusty64
         executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
 - name: vargant up
