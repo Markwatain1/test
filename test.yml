@@ -16,5 +16,5 @@
   name: "vargant up"
   tasks: 
     - 
-      cmd: "vagrant.exe up ubuntu/trusty64"
       name: "vagrant up"
+      win_command: "vagrant.exe up ubuntu/trusty64"
