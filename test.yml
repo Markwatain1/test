@@ -5,19 +5,22 @@
   name: vargant
   tasks: 
     - 
-      name: cd_vagrant1
-      win_command: "cd C:\\HashiCorp\\Vagrant\\bin\\"
-    - 
       name: "add image"
-      win_command: "vagrant.exe box add ubuntu/trusty64"
+      win_psexec: 
+        command: "vagrant.exe box add ubuntu/trusty64"
+        executable: "C:\\HashiCorp\\Vagrant\\bin\\"
+    - 
+      name: "vagrant init"
+      win_psexec: 
+        command: "vagrant.exe box add ubuntu/trusty64"
+        executable: "C:\\HashiCorp\\Vagrant\\bin\\"
 - 
   gather_facts: false
   hosts: vjhvf
   name: "vargant up"
   tasks: 
     - 
-      name: "vagrant init"
-      win_command: "vagrant.exe init ubuntu/trusty64"
-    - 
       name: "vagrant up"
-      win_command: "vagrant.exe up ubuntu/trusty64"
+      win_psexec: 
+        command: "vagrant.exe up ubuntu/trusty64"
+        executable: "C:\\HashiCorp\\Vagrant\\bin\\"
