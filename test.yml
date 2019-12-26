@@ -4,21 +4,21 @@
   hosts: vjhvf
   gather_facts: false
   
- # tasks:
+  tasks:
 
-    #- name: add image1
-     # win_psexec: 
-      #  command: box add ubuntu/trusty64
-       # executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
+    - name: add image1
+      win_psexec: 
+        command: box add centos/7
+        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
-  #  - name: vagrant init
-   #   win_psexec:
-   #     command: init
-    #    executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
+    - name: vagrant init
+      win_psexec:
+        command: init
+        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
-#- name: vargant up
- # hosts: vjhvf
-  #gather_facts: false
+- name: vargant up
+  hosts: vjhvf
+  gather_facts: false
   tasks:
 
    - name: vagrant up
