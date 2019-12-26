@@ -23,6 +23,6 @@
 
    - name: vagrant up
      win_psexec:  
-       command: up ubuntu/trusty64
+       command: up
        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
