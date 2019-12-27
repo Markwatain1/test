@@ -6,10 +6,10 @@
   
   tasks:
 
-    - name: add image1
-      win_psexec: 
-        command: box add centos/7
-        executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
+   # - name: add image1
+    #  win_psexec: 
+     #   command: box add centos/7
+      #  executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
     - name: vagrant init
       win_psexec:
