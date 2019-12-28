@@ -14,8 +14,7 @@
       win_psexec:
         command: init
         executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
-        args:
-          chdir: C:\HashiCorp\Vagrant\bin\
+        chdir: C:\HashiCorp\Vagrant\bin\
 
 - name: vargant up
   hosts: vjhvf
