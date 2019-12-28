@@ -13,7 +13,7 @@
 
     - name: vagrant init
       win_psexec:
-        chdir: C:\HashiCorp\Vagrant\bin\
+      #  chdir: C:\HashiCorp\Vagrant\bin\
         command: init
         executable: C:\HashiCorp\Vagrant\bin\vagrant.exe
 
